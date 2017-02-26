@@ -1,0 +1,22 @@
+{
+  "name": "pi-octo-lamp",
+  "version": "0.0.0",
+  "description": "Controlling the light in my life",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylor1791/pi-octo-lamp.git"
+  },
+  "author": "Taylor@Everding.email",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taylor1791/pi-octo-lamp/issues"
+  },
+  "homepage": "https://github.com/taylor1791/pi-octo-lamp#readme",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
