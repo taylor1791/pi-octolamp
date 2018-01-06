@@ -1,13 +1,20 @@
 const fetch = require('node-fetch');
 const URL = 'http://api.sunrise-sunset.org/json?lat=40.3&lng=-111.8&formatted=0';
 
+const COLORS = {
+  BLUE: 7,
+  RED: 5,
+  WHITE: 6
+  UVB: 4
+};
+
 const period = {
-  dawn: [7, 5],
-  morning: [6],
-  noon: [4, 6],
-  afternoon: [6],
-  dusk: [6, 7],
-  night: [7],
+  dawn: [COLORS.BLUE, COLORS.RED],
+  morning: [COLORS.WHITE],
+  noon: [COLORS.UVB, COLORS.WHITE],
+  afternoon: [COLORS.WHITE],
+  dusk: [COLORS.WHITE, COLORS.BLUE],
+  night: [COLORS.BLUE],
 };
 
 fetch(URL)
