@@ -2,10 +2,10 @@ const fetch = require('node-fetch');
 const URL = 'http://api.sunrise-sunset.org/json?lat=40.3&lng=-111.8&formatted=0';
 
 const COLORS = {
-  BLUE: 7,
-  RED: 5,
-  WHITE: 6
-  UVB: 4
+  UVB: 4,
+  BLUE: 5,
+  RED: 6,
+  WHITE: 7
 };
 
 const period = {
