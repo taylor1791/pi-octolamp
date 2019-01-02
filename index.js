@@ -33,12 +33,12 @@ fetch(URL)
 
 function determineTime(spec, date) {
   const simpleDuration = spec.day_length / 24 * 1000; // tenth of a day in ms
-  const dawn_start = new Date(spec.sunrise).getTime() + simpleDuration;
+  const dawn_start = new Date(spec.sunrise).getTime();
   const day_start = new Date(spec.sunrise).getTime() + 2 * simpleDuration;
-  const noon_start = new Date(spec.solar_noon).getTime() - simpleDuration;
-  const afternoon_start = new Date(spec.solar_noon).getTime() + simpleDuration;
+  const noon_start = new Date(spec.solar_noon).getTime() - 2 * simpleDuration;
+  const afternoon_start = new Date(spec.solar_noon).getTime() + 2 * simpleDuration;
   const dusk_start = new Date(spec.sunset).getTime() - 2 * simpleDuration;
-  const night_start = new Date(spec.sunset).getTime() - simpleDuration;
+  const night_start = new Date(spec.sunset).getTime();
 
   const now = Date.now();
 
