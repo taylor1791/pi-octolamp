@@ -4,12 +4,11 @@ const URL = 'http://api.sunrise-sunset.org/json?lat=40.3&lng=-111.8&formatted=0'
 const COLORS = {
   UVB: 4,
   BLUE: 5,
-  RED: 6,
-  WHITE: 7
+  WHITE: 6
 };
 
 const period = {
-  dawn: [COLORS.BLUE, COLORS.RED],
+  dawn: [COLORS.BLUE, COLORS.WHITE],
   morning: [COLORS.WHITE],
   noon: [COLORS.UVB, COLORS.WHITE],
   afternoon: [COLORS.WHITE],
