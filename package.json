@@ -1,5 +1,5 @@
 {
-  "name": "pi-octo-lamp",
+  "name": "octolamp",
   "version": "0.0.0",
   "description": "Controlling the light in my life",
   "main": "index.js",
