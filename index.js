@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fetch = require('node-fetch');
 const URL = 'http://api.sunrise-sunset.org/json?lat=40.3&lng=-111.8&formatted=0';
 
